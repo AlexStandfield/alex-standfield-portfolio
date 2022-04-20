@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Standfield's Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
     <header>
@@ -13,15 +14,24 @@
         </h1>
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>My Projects</li>
-                <li>Contact Info</li>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#my-projects">My Projects</a>
+                </li>
+                <li>
+                    <a href="#contact-info">Contact Info</a>
+                </li>
             </ul>
         </nav>
     </header>
+    <div class="space">
+        <h1>Full Stack Web Developer</h1>
+    </div>
 
-    <section>
-        <div>
+    <section id="about-me" class="about-me">
+        <div class="about-me-cta">
             <h2>About Me</h2>
             <p>
                 I am a 23 year old Full Stack Developer. I graduated from highschool in 2017 and have worked various jobs since then. I graduated from a coding bootcamp called DevMountain where I earned a Web Development Certificate. I am currently enrolled in another bootcamp run through the University of Utah for Web Development. My goal is to become a talented developer and work for a company where I can learn and grow my skills.
@@ -29,54 +39,68 @@
         </div>
     </section>
 
-    <section>
-        <div>
+    <section id="my-projects" class="my-projects">
+        <div class="profect">
+        <div class="section-title">
             <h2>My Projects</h2>
         </div>
         <div>
-            <article>
-                <div>
-                    <h3>Oil Change</h3>
+            <article class="oil-change">
+                <div class="project-details">
+                    <h3 class="project-title">Oil Change </h3>
                     <a href="https://github.com/Oil-Change/GroupProject" class="projects-link">GitHub</a>
-                    <p></p>
+                    <p>For this project the problem of forgetting your oil change is solved! Instead of having to drop your car off and wait for what feels like forever this app will allow a certified driver to be able to pick up your car and take it to be serviced while you sit in the comfort of your home or while at work.</p>
                 </div>
-                <div class="project-images">
-                    <img />
-                    <p></p>
-                </div>
-                <div class="project-images">
-                    <img />
-                    <p></p>
-                </div>
-                <div class="project-images">
-                    <img />
-                    <p></p>
-                </div>
-                <div class="project-images">
-                    <img />
-                    <p></p>
-                </div>
-                <div class="project-images">
-                    <img />
-                    <p></p>
-                </div>
-                <div class="project-images">
-                    <img />
-                    <p></p>
-                </div>
+                <div class="images">
+                    <div class="project-images">
+                        <p>Landing Page</p>
+                        <img src="./assets/images/oil-change-landing-page.png" alt="Oil Change Project Landing Page" class="oil-change-image" />
+                    </div>
+                    <div class="project-images">
+                        <p>Log In Page</p>
+                        <img src="./assets/images/oil-change-log-in-page.png" alt="Oil Change Porject Log In Page" class="oil-change-image" />
+                    </div>
+                    <div class="project-images">
+                        <p>Register Page</p>
+                        <img src="./assets/images/oil-change-register-page.png" alt="Oil Change Project Register Page" class="oil-change-image" />
+                    </div>
+                    <div class="project-images">
+                        <p>Car Page</p>
+                        <img src="./assets/images/oil-change-car-page.png" alt="Oil Change Project Car Page" class="oil-change-image" />
+                    </div>
+                    <div class="project-images">
+                        <p>Payment Page</p>
+                        <img src="./assets/images/oil-change-payment-page.png" alt="Oil Change Project Payment Page" class="oil-change-image" />
+                    </div>
+                    <div class="project-images">
+                        <p>Instructions Page</p>
+                        <img src="./assets/images/oil-change-instructions-page.png" alt="Oil Change Project Instructions Page" class="oil-change-image" />
+                    </div>
+            </div>
             </article>
-         </div>
+        </div>
+    </div>
     </section>
 
-    <footer>
-        <h2>Contact Info</h2>
-        <nav>
-            <ul>
-                <li>Email</li>
-                <li>GitHub</li>
-                <li>Linkedn</li>
-            </ul>
-        </nav>
+    <section id="contact-info" class="contact-info">
+        <div class="contact-info-box">
+            <div class="contact-info-title">
+                <h2>Contact Info</h2>
+            </div>
+            <div>
+                <nav>
+                    <ul>
+                        <li>Email</li>
+                        <li><a href="https://github.com/AlexStandfield">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/alex-standfield/">Linkedn</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+    </section>
+
+    <footer >
+        
     </footer>
     
 </body>
