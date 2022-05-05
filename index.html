@@ -41,45 +41,56 @@
 
     <section id="my-projects" class="my-projects">
         <div class="project">
-        <div class="section-title">
-            <h2>My Projects</h2>
-        </div>
-        <div>
-            <article class="oil-change">
-                <div class="project-details">
-                    <h3 class="project-title">Oil Change </h3>
-                    <a href="https://github.com/Oil-Change/GroupProject" class="projects-link">GitHub</a>
-                    <p>For this project the problem of forgetting your oil change is solved! Instead of having to drop your car off and wait for what feels like forever this app will allow a certified driver to be able to pick up your car and take it to be serviced while you sit in the comfort of your home or while at work.</p>
-                </div>
-                <div class="images">
-                    <div class="project-images">
-                        <p>Landing Page</p>
-                        <img src="./assets/images/oil-change-landing-page.png" alt="Oil Change Project Landing Page" class="oil-change-image" />
-                    </div>
-                    <div class="project-images">
-                        <p>Log In Page</p>
-                        <img src="./assets/images/oil-change-log-in-page.png" alt="Oil Change Porject Log In Page" class="oil-change-image" />
-                    </div>
-                    <div class="project-images">
-                        <p>Register Page</p>
-                        <img src="./assets/images/oil-change-register-page.png" alt="Oil Change Project Register Page" class="oil-change-image" />
-                    </div>
-                    <div class="project-images">
-                        <p>Car Page</p>
-                        <img src="./assets/images/oil-change-car-page.png" alt="Oil Change Project Car Page" class="oil-change-image" />
-                    </div>
-                    <div class="project-images">
-                        <p>Payment Page</p>
-                        <img src="./assets/images/oil-change-payment-page.png" alt="Oil Change Project Payment Page" class="oil-change-image" />
-                    </div>
-                    <div class="project-images">
-                        <p>Instructions Page</p>
-                        <img src="./assets/images/oil-change-instructions-page.png" alt="Oil Change Project Instructions Page" class="oil-change-image" />
-                    </div>
+            <div class="section-title">
+                <h2>My Projects</h2>
             </div>
-            </article>
+            <div class="oil-change-project">
+                <article class="oil-change">
+                    <div class="project-details">
+                        <h3 class="project-title">Oil Change </h3>
+                        <a href="https://github.com/Oil-Change/GroupProject" class="projects-link">GitHub</a>
+                        <p>For this project the problem of forgetting your oil change is solved! Instead of having to drop your car off and wait for what feels like forever this app will allow a certified driver to be able to pick up your car and take it to be serviced while you sit in the comfort of your home or while at work.</p>
+                    </div>
+                <!-- Images Section -->
+                    <div class="images">
+                        <div class="project-images fade">
+                            <img src="./assets/images/oil-change-landing-page.png" alt="Oil Change Project Landing Page" class="oil-change-image" id="oil-change-image-1" />
+                            <p>Landing Page</p>
+                        </div>
+                        <div class="project-images fade">
+                            <img src="./assets/images/oil-change-log-in-page.png" alt="Oil Change Porject Log In Page" class="oil-change-image" id="oil-change-image-2"/>
+                            <p>Log In Page</p>
+                        </div>
+                        <div class="project-images fade">
+                            <img src="./assets/images/oil-change-register-page.png" alt="Oil Change Project Register Page" class="oil-change-image" id="oil-change-image-3"/>
+                            <p>Register Page</p>
+                        </div>
+                        <div class="project-images fade">
+                            <img src="./assets/images/oil-change-car-page.png" alt="Oil Change Project Car Page" class="oil-change-image" id="oil-change-image-4"/>
+                            <p>Car Page</p>
+                        </div>
+                        <div class="project-images fade">
+                            <img src="./assets/images/oil-change-payment-page.png" alt="Oil Change Project Payment Page" class="oil-change-image" id="oil-change-image-5"/>
+                            <p>Payment Page</p>
+                        </div>
+                        <div class="project-images fade">
+                            <img src="./assets/images/oil-change-instructions-page.png" alt="Oil Change Project Instructions Page" class="oil-change-image" id="oil-change-image-6"/>
+                            <p>Instructions Page</p>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                    </div>
+                </article>
+            </div>
         </div>
-    </div>
     </section>
 
     <section id="contact-info" class="contact-info">
@@ -102,6 +113,6 @@
     <footer >
         
     </footer>
-    
+    <script src="./assets/script.js"></script>
 </body>
 </html>
